@@ -11,7 +11,7 @@ router.register('weapon', api.WeaponViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('auth_users/', views.auth_users, name='auth_users'),
-    path('get_user_models/',views.get_user_models,name='get_user'),
-    path('userProfile/<int:id>',views.userprofile,name ='userProfile')
+    path('get_user_model/<int:userID>',views.get_user_model,name='get_user'),
+    path('get_weapon_model/',views.get_weapon_model,name ='get_weapon'),
 
     ]

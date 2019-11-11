@@ -15,19 +15,23 @@ class FighterProfile extends Component
     componentDidMount()
     {
 
-        fetch(`userProfile/${this.props.user.id}`)
+        fetch(`get_user_model/${this.props.user.userID}`)
             .then(data => data.json())
             .then((response) => {
                 console.log(response);
                 let tempData = response.map(
-                    (eachelement) =>
+                    (each) =>
                     {
+                        console.log(each);
                         return (
 
-                            <div key={eachelement.id}>
+                            <div key={each.id}>
 
-                                <h1>{eachelement.username}</h1>
-                                {/*<h3>{eachelement.userHealth}</h3>*/}
+                                <h1>{each.username}</h1>
+                                <h3>Attack : {each.userAttack}</h3>
+                                <h3>Health Power :{each.userHealth}</h3>
+                                <h3>My Avatar<br/><img src={each.userAvatar} height="200"/></h3>
+                                <h3>Weapon Equipped :{each.itemEquipped}</h3>
 
                             </div>)
 

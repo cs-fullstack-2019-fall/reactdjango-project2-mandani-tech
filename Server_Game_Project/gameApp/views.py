@@ -1,6 +1,6 @@
-from .models import UserModel
+from .models import UserModel , WeaponModel
 from django.http import HttpResponse, JsonResponse
-from .serializer import UserSerializer
+from .serializer import UserSerializer, WeaponSerializer
 from json import loads
 
 # Create your views here.
@@ -20,13 +20,13 @@ def auth_users(request):
     return HttpResponse(False)
 
 
-def userprofile(request,id):
-    allUserModels = UserModel.objects
-    serializer = UserSerializer(allUserModels, many=True)
+def get_weapon_model(request):
+    allWeaponModel = WeaponModel.objects.all()
+    serializer = WeaponSerializer(allWeaponModel, many=True)
     return JsonResponse(serializer.data, safe=False)
 
 
-def get_user_models(request, userID):
-    allUserModels = UserModel.objects.filter(foreignKey=userID)
-    serializer = UserSerializer(allUserModels, many=True)
+def get_user_model(request, userID):
+    allUserModel = UserModel.objects.filter(id=userID)
+    serializer = UserSerializer(allUserModel, many=True)
     return JsonResponse(serializer.data, safe=False)

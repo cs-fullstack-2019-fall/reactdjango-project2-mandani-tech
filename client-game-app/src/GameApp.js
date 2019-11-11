@@ -34,6 +34,7 @@ class GameApp extends Component
         e.preventDefault();
         let usernameFromInput=document.getElementById('username').value;
         let passwordFromInput=document.getElementById('password').value;
+
         console.log(usernameFromInput);
 
         fetch("/auth_users/",
@@ -48,6 +49,7 @@ class GameApp extends Component
                 body: JSON.stringify({
                     username: usernameFromInput,
                     password: passwordFromInput,
+
                 })
             }
         )
@@ -185,6 +187,9 @@ class GameApp extends Component
 
                                     <label htmlFor="password">Login Password</label>
                                     <input type="text" id="password"/><br/>
+
+
+
 
                                     <button>Submit</button>
 

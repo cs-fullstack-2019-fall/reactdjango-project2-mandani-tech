@@ -24,6 +24,7 @@ class NewUser extends Component
         e.preventDefault();
         let usernameFromInput = document.getElementById("new_username").value;
         let passwordFromInput = document.getElementById("new_password").value;
+        let avatarFromInput=document.getElementById('userAvatar').value;
 
         fetch("/user/", {
             method: 'post',
@@ -34,7 +35,11 @@ class NewUser extends Component
             body: JSON.stringify({
                 username: usernameFromInput,
                 password: passwordFromInput,
+                userAvatar: avatarFromInput,
+
+
             })
+
         })
             .then(data => data.json())
             .then(resp =>
@@ -74,6 +79,9 @@ class NewUser extends Component
 
                     <label htmlFor="new_password">Enter New Password</label>
                     <input type="text" id="new_password"/><br/>
+
+                    <label htmlFor="userAvatar">My Avatar</label>
+                    <input type="text" id="userAvatar" placeholder="Type your image url here"/><br/>
 
                     <button>Submit</button>
 
