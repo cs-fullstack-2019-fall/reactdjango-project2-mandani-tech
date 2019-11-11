@@ -67,6 +67,7 @@ class NewUser extends Component
 
 
                 {this.state.messageToCreateUsers}
+
                 <form onSubmit={this.createNewUser}>
                     <label htmlFor="new_username">Enter New Username</label>
                     <input type="text" id="new_username"/><br/>
@@ -74,12 +75,11 @@ class NewUser extends Component
                     <label htmlFor="new_password">Enter New Password</label>
                     <input type="text" id="new_password"/><br/>
 
-
-
-
                     <button>Submit</button>
-                </form>
 
+
+                </form>
+                {/*<a href="FighterProfile/">Back</a>*/}
 
 
             </div>

@@ -178,13 +178,16 @@ class GameApp extends Component
                             <Route path="/" >
                                 <h3>Please sign in!</h3>
                                 <Link className="router-link" to="NewUser"> Create a New User Login OR</Link>
+
                                 <form onSubmit={this.loginForm}>
                                     <label htmlFor="username">Login Username</label>
                                     <input type="text" id="username"/><br/>
 
                                     <label htmlFor="password">Login Password</label>
                                     <input type="text" id="password"/><br/>
+
                                     <button>Submit</button>
+
                                 </form>
 
                             </Route>
