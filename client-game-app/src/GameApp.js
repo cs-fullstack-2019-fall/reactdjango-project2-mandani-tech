@@ -125,7 +125,8 @@ class GameApp extends Component
 
                             </Route>
 
-                            <Route path="/editUserProfile" component={EditUserProfile} >
+                            <Route path="/editUserProfile" >
+                                <EditUserProfile user={this.state.user}/>
 
                             </Route>
 
