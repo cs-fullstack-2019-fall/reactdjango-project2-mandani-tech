@@ -30,7 +30,7 @@ class FighterProfile extends Component
                                 <h1>{each.username}</h1>
                                 <h3>Attack : {each.userAttack}</h3>
                                 <h3>Health Power :{each.userHealth}</h3>
-                                <h3>My Avatar<br/><img src={each.userAvatar} height="200"/></h3>
+                                <h3>My Avatar<br/><img src={each.userAvatar} height="200" alt="img"/></h3>
                                 <h3>Weapon Equipped :{each.itemEquipped}</h3>
 
                             </div>)

@@ -121,7 +121,8 @@ class GameApp extends Component
 
                             </Route>
 
-                            <Route path="/displayAllMonsters" component={Fight} >
+                            <Route path="/displayAllMonsters"  >
+                                <Fight  user={this.state.user}/>
 
                             </Route>
 

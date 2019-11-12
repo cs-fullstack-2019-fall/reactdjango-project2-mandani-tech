@@ -30,7 +30,7 @@ class Shop extends Component
 
                                 <h3>Weapon  : {each.weaponName}</h3>
                                 <h3>Attack :{each.weaponAttack}</h3>
-                                <h3>Avatar: <br/><img src={each.weaponAvatar} height="200"/></h3>
+                                <h3>Avatar: <br/><img src={each.weaponAvatar} height="200" alt="img"/></h3>
 
                             </div>)
 
@@ -45,7 +45,7 @@ class Shop extends Component
 
     render() {
         return(<div>
-            {this.state. weaponsList}
+            {this.state.weaponsList}
         </div>)
     }
 }
