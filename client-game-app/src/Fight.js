@@ -7,9 +7,9 @@ class Fight extends Component
     {
         super(props);
         this.state = {
-            monsterList: <h3>Loading</h3>,
-            userProfile: '',
-            userHealth:''
+            arraymonsterList: <h3>Loading</h3>,
+            arrayofuserProfile: [],
+            userHealth:-1
 
         }
     }
@@ -60,7 +60,7 @@ class Fight extends Component
                     }
                 );
 
-                this.setState({ monsterList: tempData})
+                this.setState({ arraymonsterList: tempData})
 
             });
 
@@ -79,7 +79,7 @@ class Fight extends Component
 
                                 <h1>{each.username}</h1>
                                 <h3>Attack : {each.userAttack}</h3>
-                                <h3>Health Power :{each.userHealth}</h3>
+                                {/*<h3>Health Power :{each.userHealth}</h3>*/}
                                 <h3>My Avatar<br/><img src={each.userAvatar} height="200" alt="img"/></h3>
                                 <h3>Weapon Equipped :{each.itemEquipped ? "Yes": "No"}</h3>
                                 {/*<button onClick={this.userHealthTracker(each.userHealth)}>Attack</button>*/}
@@ -89,7 +89,7 @@ class Fight extends Component
                     }
                 );
 
-                this.setState({userProfile: tempData})
+                this.setState({arrayuserProfile: tempData})
 
 
             });
@@ -101,11 +101,16 @@ class Fight extends Component
 
 
     render() {
+        console.log(this.state.userHealth);
         return(<div>
 
-            {this.state.userProfile}
+            <h3>{this.state.userHealth}</h3>
+
+            {this.state.arrayuserProfile}
             <hr/>
-            {this.state.monsterList}
+            {this.state.arraymonsterList}
+
+            {this.state.userHealth}
 
         </div>)
     }
