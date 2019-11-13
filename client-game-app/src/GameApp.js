@@ -14,6 +14,7 @@ import {
 
 class GameApp extends Component
 {
+
     constructor(props)
     {
         super(props);
@@ -28,12 +29,12 @@ class GameApp extends Component
         }
     }
 
-    // LOGIN FETCH ENDS HERE
 
-    loginForm=(e)=>{
+
+    onSubmitLoginForm=(e)=>{
         e.preventDefault();
-        let usernameFromInput=document.getElementById('username').value;
-        let passwordFromInput=document.getElementById('password').value;
+        let usernameFromInput= e.target.username.value;
+        let passwordFromInput= e.target.password.value;
 
         console.log(usernameFromInput);
 
@@ -54,14 +55,23 @@ class GameApp extends Component
             }
         )
             .then(data=>data.text())
-            .then(response=> {
+            .then(response=>
+            {
                 // console.log(response);
-                if (response === "False")
-                {
+                if (response === "False") {
                     this.setState({messageToUsers: "Username or password incorrect !"})
                 }
 
                 else {
+                    this.loginForm(usernameFromInput, response)
+
+                }
+            });
+    };
+    // LOGIN FETCH ENDS HERE
+
+    loginForm=(usernameFromInput, response)=>{
+
                     this.setState(
                         {
                             user: {
@@ -70,10 +80,10 @@ class GameApp extends Component
                                 userID: response
                             }
                         });
-                }
+                };
 
-            });
-    };
+
+
     // LOGIN FETCH ENDS HERE
 
     logout=()=>{
@@ -87,8 +97,16 @@ class GameApp extends Component
 
     };
 
+    editCallBackFunc=(response)=>{
+        this.setState({
+            user:{
+                username: response.username,
+                password: response.password,
+                userAvatar: response.userAvatar
+            }
+        })
 
-
+};
 
 
 
@@ -127,7 +145,7 @@ class GameApp extends Component
                             </Route>
 
                             <Route path="/editUserProfile" >
-                                <EditUserProfile user={this.state.user} loginForm={this.loginForm}/>
+                                <EditUserProfile user={this.state.user} editCallBackFunc={this.editCallBackFunc}/>
 
                             </Route>
 
@@ -183,7 +201,7 @@ class GameApp extends Component
                                 <h3>Please sign in!</h3>
                                 <Link className="router-link" to="NewUser"> Create a New User Login OR</Link>
 
-                                <form onSubmit={this.loginForm}>
+                                <form onSubmit={(e)=>this.onSubmitLoginForm(e)}>
                                     <label htmlFor="username">Login Username</label>
                                     <input type="text" id="username"/><br/>
 

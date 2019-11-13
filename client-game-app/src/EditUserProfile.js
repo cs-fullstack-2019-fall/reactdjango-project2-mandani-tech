@@ -5,7 +5,8 @@ class EditUserProfile extends Component
 
     edit_item = (e) => {
         e.preventDefault();
-        fetch('/user/' + this.props.user.userID/
+        console.log(this.props.user);
+        fetch('/user/' + parseInt(this.props.user.userID) + "/",
             {
             method: "put",
             headers: {
@@ -24,8 +25,10 @@ class EditUserProfile extends Component
             })
         })
             .then(data=>data.json())
-            .then(response=>this.props.loginForm(response))
-            .then(()=>console.log("blah"));
+            .then(response=>{
+                console.log(response);
+                this.props.editCallBackFunc(response)})
+
 
     };
 
@@ -35,13 +38,13 @@ class EditUserProfile extends Component
             <div>
                 <form onSubmit={this.edit_item}>
                     <label htmlFor = "username"> Change my username :</label>
-                    <input type = "text" id = "username" /><br/>
+                    <input type = "text" id = "username" defaultValue={this.props.user.username} /><br/>
 
                     <label htmlFor = "password" >Change my password :</label>
-                    <input type="text" id="password" /><br/>
+                    <input type="text" id="password" defaultValue={this.props.user.username}/><br/>
 
                     <label htmlFor="userAvatar">Change my Avatar :</label>
-                    <input type="text" id="userAvatar" placeholder= "Add the image url here" /><br/>
+                    <input type="text" id="userAvatar"  defaultValue={this.props.user.userAvatar}/><br/>
 
                     <button>Submit</button>
 
