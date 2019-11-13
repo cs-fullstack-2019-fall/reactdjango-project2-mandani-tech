@@ -3,8 +3,9 @@ import React, {Component} from 'react';
 class EditUserProfile extends Component
 {
 
-    edit_item = () => {
-        fetch('/get_user_model/' + this.props.user.userID,
+    edit_item = (e) => {
+        e.preventDefault();
+        fetch('/user/' + this.props.user.userID/
             {
             method: "put",
             headers: {
@@ -13,15 +14,18 @@ class EditUserProfile extends Component
             },
 
             body:  JSON.stringify({
+                id:this.props.user.userID,
                 username: document.getElementById("username").value,
                 password: document.getElementById("password").value,
                 userAvatar: document.getElementById("userAvatar").value,
 
 
+
             })
         })
             .then(data=>data.json())
-            .then(response=>this.props.loginForm(response));
+            .then(response=>this.props.loginForm(response))
+            .then(()=>console.log("blah"));
 
     };
 

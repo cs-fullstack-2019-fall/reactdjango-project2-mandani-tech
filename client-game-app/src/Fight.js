@@ -7,20 +7,28 @@ class Fight extends Component
     {
         super(props);
         this.state = {
-            weaponsList: <h3>Loading</h3>,
+            monsterList: <h3>Loading</h3>,
+            userProfile: '',
+            userHealth:''
 
         }
     }
 
-    userHealthTracker =(userHealth,monsterAttack)=>
+    userHealthTracker =(monsterAttack,e)=>
     {
-        console.log(userHealth,monsterAttack);
+        console.log(this.state.userHealth);
+        // console.log(userHealth);
+        // console.log(monsterAttack.target);
+        // console.log(userHealth,monsterAttack);
         this.setState((prevState,props)=>
             ({
                 userHealth:prevState.userHealth - monsterAttack,
             })
-        )
+        );
+        // console.log("I got a click " );
     };
+
+
 
 
 
@@ -30,11 +38,11 @@ class Fight extends Component
         fetch(`get_monster_model/`)
             .then(data => data.json())
             .then((response) => {
-                console.log(response);
+                // console.log(response);
                 let tempData = response.map(
                     (each) =>
                     {
-                        console.log(each)
+                        // console.log(each)
                         return (
 
                             <div key={each.id}>
@@ -44,7 +52,7 @@ class Fight extends Component
                                 <h3>Attack :{each.monsterAttack}</h3>
                                 <h3>Health :{each.monsterHealth}</h3>
                                 <h3>Avatar :<br/><img src={each.monsterAvatar} height="200" alt="img"/></h3>
-                                <button onClick={this.userHealthTracker(each.monsterAttack)}>Attack</button>
+                                <button onClick={(e)=>this.userHealthTracker(each.monsterAttack,e)}>Attack!</button>
                                 <hr/>
 
                             </div>)
@@ -52,18 +60,19 @@ class Fight extends Component
                     }
                 );
 
-                this.setState({ weaponsList: tempData})
+                this.setState({ monsterList: tempData})
 
             });
 
         fetch(`get_user_model/${this.props.user.userID}`)
             .then(data => data.json())
             .then((response) => {
-                console.log(response);
+                // console.log(response);
                 let tempData = response.map(
                     (each) =>
                     {
-                        console.log(each);
+                        this.setState({userHealth: each.userHealth});
+
                         return (
 
                             <div key={each.id}>
@@ -73,7 +82,7 @@ class Fight extends Component
                                 <h3>Health Power :{each.userHealth}</h3>
                                 <h3>My Avatar<br/><img src={each.userAvatar} height="200" alt="img"/></h3>
                                 <h3>Weapon Equipped :{each.itemEquipped ? "Yes": "No"}</h3>
-                                <button onClick={this.userHealthTracker(each.userHealth)}>Attack</button>
+                                {/*<button onClick={this.userHealthTracker(each.userHealth)}>Attack</button>*/}
 
                             </div>)
 
@@ -81,6 +90,7 @@ class Fight extends Component
                 );
 
                 this.setState({userProfile: tempData})
+
 
             });
 
@@ -95,7 +105,8 @@ class Fight extends Component
 
             {this.state.userProfile}
             <hr/>
-            {this.state.weaponsList}
+            {this.state.monsterList}
+
         </div>)
     }
 }

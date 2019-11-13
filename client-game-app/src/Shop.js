@@ -22,15 +22,15 @@ class Shop extends Component
                 let tempData = response.map(
                     (each) =>
                     {
-                        console.log(each)
+                        console.log(each);
                         return (
 
                             <div key={each.id}>
 
 
-                                <h3>Weapon  : {each.weaponName}</h3>
-                                <h3>Attack :{each.weaponAttack}</h3>
-                                <h3>Avatar: <br/><img src={each.weaponAvatar} height="200" alt="img"/></h3>
+                                <h3>Weapon  :{each.weaponName}</h3>
+                                <h3>Attack  :{each.weaponAttack}</h3>
+                                <h3>Avatar  :<br/><img src={each.weaponAvatar} height="200" alt="img"/></h3>
 
                             </div>)
 
