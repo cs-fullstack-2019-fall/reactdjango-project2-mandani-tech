@@ -13,7 +13,8 @@ class Fight extends Component
             userHealth: -1,
             userAvatar:'',
             userAttack:-1,
-            itemEquipped:false
+            itemEquipped:false,
+            fightWeaponAttack: this.props.fightWeaponAttack
 
 
 
@@ -38,7 +39,7 @@ class Fight extends Component
 
     getUserHealth=(userHealth)=>{
 
-        console.log(userHealth);
+        // console.log(userHealth);
 
         this.setState({
             userHealth:userHealth
@@ -114,7 +115,7 @@ class Fight extends Component
                                 {/*<h3>{each.monsterName}'s Health :{each.monsterHealth}</h3>*/}
                                 <h3>Avatar :<br/><img src={each.monsterAvatar} height="200" alt="img"/></h3>
                                 {/*<button onClick={(e)=>this.userHealthTracker(each.monsterAttack,e)}>Attack!</button>*/}
-                                <Monsters getUserHealth={this.getUserHealth} individualMonsterHealth={this.state.monsterHealth} userAttacksentToMonster={this.state.userAttack} userHealthsentToMonster={this.state.userHealth} monsterAttacksentToMonster={this.state.monsterAttack}/>
+                                <Monsters fightWeaponAttack={this.state.fightWeaponAttack}  getUserHealth={this.getUserHealth} individualMonsterHealth={this.state.monsterHealth} userAttacksentToMonster={this.state.userAttack} userHealthsentToMonster={this.state.userHealth} monsterAttacksentToMonster={this.state.monsterAttack}/>
 
 
                                 <hr/>
@@ -140,7 +141,7 @@ class Fight extends Component
 
 
     {
-        console.log(this.props);
+        // console.log(this.props);
         if (this.props.itemEquipped)
         {
 

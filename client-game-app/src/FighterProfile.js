@@ -68,7 +68,7 @@ class FighterProfile extends Component
 
         render()
         {
-            console.log(this.props);
+            // console.log(this.props);
             if (this.props.itemEquipped)
             {
             return (

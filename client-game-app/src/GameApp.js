@@ -11,6 +11,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import Monsters from "./Monsters";
 
 class GameApp extends Component
 {
@@ -24,6 +25,7 @@ class GameApp extends Component
                 username: null,
                 userID: 0,
                 itemEquipped: false,
+
 
             }
         }
@@ -167,6 +169,7 @@ class GameApp extends Component
                                 <Shop equipWeapon={this.equipWeapon}/>
 
                             </Route>
+
 
 
                             <Route path="/">
