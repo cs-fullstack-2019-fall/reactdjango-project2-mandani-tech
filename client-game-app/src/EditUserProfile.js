@@ -46,7 +46,7 @@ class EditUserProfile extends Component
                     <label htmlFor="userAvatar">Change my Avatar :</label>
                     <input type="text" id="userAvatar"  defaultValue={this.props.user.userAvatar}/><br/>
 
-                    <button>Submit</button>
+                    <button className="btn-warning">Submit</button>
 
 
 

@@ -22,8 +22,8 @@ class GameApp extends Component
             user :{
                 isLoggedIn: false,
                 username: null,
-                userID: 0
-
+                userID: 0,
+                itemEquipped: false,
 
             }
         }
@@ -108,6 +108,20 @@ class GameApp extends Component
 
 };
 
+// this function is getting called in shop on button clicked for weapon equipped. saved state is sent to fighet profile to render profile conditionally
+    equipWeapon = (each,e) =>
+    {
+        console.log(each.weaponAttack);
+        this.setState({
+
+            fightWeaponAttack: each.weaponAttack,
+            itemEquipped:true
+
+
+        })
+
+    };
+
 
 
     render()
@@ -118,7 +132,7 @@ class GameApp extends Component
             return (
 
                 <div>
-                    <h1>Welcome to the Game {this.state.user.username}</h1>
+                    <h1 className ="jumbotron text-center" >Welcome to the Game {this.state.user.username}</h1>
 
                     <Router>
 
@@ -134,13 +148,13 @@ class GameApp extends Component
                         </nav>
 
                         <Switch>
-                            <Route path="/displayUserProfile"   >
-                                <FighterProfile user={this.state.user}/>
+                            <Route path="/displayUserProfile" >
+                                <FighterProfile user={this.state.user} fightWeaponAttack={this.state.fightWeaponAttack} itemEquipped={this.state.itemEquipped} />
 
                             </Route>
 
                             <Route path="/displayAllMonsters"  >
-                                <Fight  user={this.state.user}/>
+                                <Fight  user={this.state.user} fightWeaponAttack={this.state.fightWeaponAttack} itemEquipped={this.state.itemEquipped}/>
 
                             </Route>
 
@@ -149,19 +163,11 @@ class GameApp extends Component
 
                             </Route>
 
-                            <Route path="/displayWeapons" component={Shop} >
+                            <Route path="/displayWeapons"  >
+                                <Shop equipWeapon={this.equipWeapon}/>
 
                             </Route>
 
-
-
-                            {/*<Route path="/addLead" >*/}
-                            {/*    <AddLead user={this.state.user}/>*/}
-                            {/*</Route>*/}
-
-                            {/*<Route path="/editLead/:LeadID" component={EditLead}>*/}
-
-                            {/*</Route>*/}
 
                             <Route path="/">
                                 <Home/>
@@ -182,7 +188,7 @@ class GameApp extends Component
 
                 <div>
 
-                    <h1>Welcome to the Game</h1>
+                    <h1 className ="jumbotron text-center" >Welcome to the Game</h1>
 
                     {this.state.messageToUsers}
 
@@ -211,7 +217,7 @@ class GameApp extends Component
 
 
 
-                                    <button>Submit</button>
+                                    <button className= "btn-success">Submit</button>
 
                                 </form>
 

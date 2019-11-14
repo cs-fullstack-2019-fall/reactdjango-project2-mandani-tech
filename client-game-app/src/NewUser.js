@@ -83,7 +83,7 @@ class NewUser extends Component
                     <label htmlFor="userAvatar">My Avatar</label>
                     <input type="text" id="userAvatar" placeholder="Type your image url here"/><br/>
 
-                    <button>Submit</button>
+                    <button className="btn-success">Submit</button>
 
 
                 </form>
