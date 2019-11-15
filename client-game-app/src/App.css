@@ -2,7 +2,10 @@
   text-align: center;
 }
 body{
-  background: chartreuse;
+  background-image: url("Sky_Monsters.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 
 }
 
@@ -20,10 +23,29 @@ body{
   justify-content: center;
   font-size: calc(12px + 2vmin);
   color: blue;
-  margin: 20%;
+  margin: 25%;
   border:orangered solid 10px;
+  border-radius: 70px;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.sesame-street-sign {
+
+  background: darkblue;
+  color: white;
+  border: darkgoldenrod  solid 5px;
+  border-radius: 30px;
+  text-align:center;
+  font-size: 45px;
+  padding: auto;
+  height: 8%;
+  /*background-image: url("BrickWall_line.jpg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: contain;*/
+
+
+
 }

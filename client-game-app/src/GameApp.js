@@ -121,7 +121,8 @@ class GameApp extends Component
             itemEquipped:true
 
 
-        })
+
+        });
 
     };
 
@@ -135,7 +136,7 @@ class GameApp extends Component
             return (
 
                 <div>
-                    <h1 className ="jumbotron text-center" >Welcome to the Game {this.state.user.username}</h1>
+                    <h1 className =" jumbotron  " style={{borderRadius:20}} >Welcome to the Sesame Street {this.state.user.username}</h1>
 
                     <Router>
 
@@ -151,8 +152,8 @@ class GameApp extends Component
                         </nav>
 
                         <Switch>
-                            <Route path="/displayUserProfile" >
-                                <FighterProfile user={this.state.user} fightWeaponAvatar={this.state.fightWeaponAvatar} fightWeaponAttack={this.state.fightWeaponAttack} itemEquipped={this.state.itemEquipped} />
+                            <Route path="/displayUserProfile">
+                                <FighterProfile  user={this.state.user} fightWeaponAvatar={this.state.fightWeaponAvatar} fightWeaponAttack={this.state.fightWeaponAttack} itemEquipped={this.state.itemEquipped} />
 
                             </Route>
 
@@ -192,7 +193,7 @@ class GameApp extends Component
 
                 <div>
 
-                    <h1 className ="jumbotron text-center" >Welcome to the Game</h1>
+                    <h1>Welcome to the Game</h1>
 
                     {this.state.messageToUsers}
 

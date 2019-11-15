@@ -14,11 +14,12 @@ class Monsters extends Component
             userAttack: this.props.userAttacksentToMonster,
             monsterAttack: this.props.monsterAttacksentToMonster,
             getUserHealth: this.props.getUserHealth,
-            fightWeaponAttack:0
+            fightWeaponAttack: (this.props.fightWeaponAttack===undefined? 0: this.props.fightWeaponAttack)
         }
     }
 
     healthTracker = (e) =>
+
     {
         // console.log(this.props.userAttacksentToMonster);
         // console.log(this.state.monsterHealth);
@@ -26,13 +27,17 @@ class Monsters extends Component
         // console.log(this.state.monsterAttack);
         console.log("weapon attack value" + this.state.fightWeaponAttack);
         this.setState((prevState, props) =>
+
             ({
+
+
                 userHealth: parseInt(prevState.userHealth )- this.state.monsterAttack,
                 monsterHealth: prevState.monsterHealth - this.state.userAttack -this.state.fightWeaponAttack,
 
             })
         );
         // console.log("I got a click " );
+        this.state.getUserHealth(this.state.userHealth);
 
     };
 
@@ -40,7 +45,7 @@ class Monsters extends Component
 
 render()
     {
-        this.state.getUserHealth(this.state.userHealth);
+
         // console.log(this.props.individualMonsterHealth);
         // console.log(this.props);
         // console.log("user health in monster comp" + this.state.userHealth);

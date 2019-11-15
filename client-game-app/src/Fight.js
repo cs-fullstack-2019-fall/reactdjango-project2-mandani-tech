@@ -117,7 +117,7 @@ class Fight extends Component
                                 {/*<h3>{each.monsterName}'s Health :{each.monsterHealth}</h3>*/}
                                 <h3>Avatar :<br/><img src={each.monsterAvatar} height="200" alt="img"/></h3>
                                 {/*<button onClick={(e)=>this.userHealthTracker(each.monsterAttack,e)}>Attack!</button>*/}
-                                <Monsters fightWeaponAttack={this.state.fightWeaponAttack}  getUserHealth={this.getUserHealth} individualMonsterHealth={this.state.monsterHealth} userAttacksentToMonster={this.state.userAttack} userHealthsentToMonster={this.state.userHealth} monsterAttacksentToMonster={this.state.monsterAttack}/>
+                                <Monsters fightWeaponAttack={this.props.fightWeaponAttack}  getUserHealth={this.getUserHealth} individualMonsterHealth={this.state.monsterHealth} userAttacksentToMonster={this.state.userAttack} userHealthsentToMonster={this.state.userHealth} monsterAttacksentToMonster={this.state.monsterAttack}/>
 
 
                                 <hr/>
@@ -161,7 +161,7 @@ class Fight extends Component
                 <h1 className=" text-capitalize text-danger ">{this.state.username}</h1>
                 <h3>Attack : {this.state.userAttack}</h3>
                 <h3>Health Power :{this.state.userHealth}</h3>
-                <h3>My Avatar<br/><img src={this.state.userAvatar} height="200" alt="img"/></h3>
+                <h3>My Avatar<br/><img src={this.state.userAvatar} height="300" alt="img"/></h3>
                 <h3>Weapon Equipped :{this.props.itemEquipped? "Yes": "No"}</h3>
                 <h3>Weapon Attack : {this.props.fightWeaponAttack}</h3>
 

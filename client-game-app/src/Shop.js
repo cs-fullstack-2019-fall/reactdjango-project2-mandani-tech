@@ -34,7 +34,7 @@ class Shop extends Component
                                 <h3>Avatar  : <br/><img src={each.weaponAvatar} height="200" alt="img"/></h3>
                                 <button className="btn-danger" onClick={(e)=>this.props.equipWeapon(each,e)}>Equip Weapon</button>
                                 <hr/>
-                                <hr/>
+
 
                             </div>)
 
