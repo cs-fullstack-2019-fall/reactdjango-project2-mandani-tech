@@ -29,10 +29,12 @@ class Shop extends Component
                             <div key={each.id}>
 
 
-                                <h3>Weapon  :{each.weaponName}</h3>
-                                <h3>Attack  :{each.weaponAttack}</h3>
-                                <h3>Avatar  :<br/><img src={each.weaponAvatar} height="200" alt="img"/></h3>
+                                <h3>Weapon  : {each.weaponName}</h3>
+                                <h3>Attack  : {each.weaponAttack}</h3>
+                                <h3>Avatar  : <br/><img src={each.weaponAvatar} height="200" alt="img"/></h3>
                                 <button className="btn-danger" onClick={(e)=>this.props.equipWeapon(each,e)}>Equip Weapon</button>
+                                <hr/>
+                                <hr/>
 
                             </div>)
 

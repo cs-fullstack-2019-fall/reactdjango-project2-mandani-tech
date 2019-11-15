@@ -117,6 +117,7 @@ class GameApp extends Component
         this.setState({
 
             fightWeaponAttack: each.weaponAttack,
+            fightWeaponAvatar: each.weaponAvatar,
             itemEquipped:true
 
 
@@ -151,7 +152,7 @@ class GameApp extends Component
 
                         <Switch>
                             <Route path="/displayUserProfile" >
-                                <FighterProfile user={this.state.user} fightWeaponAttack={this.state.fightWeaponAttack} itemEquipped={this.state.itemEquipped} />
+                                <FighterProfile user={this.state.user} fightWeaponAvatar={this.state.fightWeaponAvatar} fightWeaponAttack={this.state.fightWeaponAttack} itemEquipped={this.state.itemEquipped} />
 
                             </Route>
 

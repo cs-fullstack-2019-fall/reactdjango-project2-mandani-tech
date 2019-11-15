@@ -14,7 +14,7 @@ class Monsters extends Component
             userAttack: this.props.userAttacksentToMonster,
             monsterAttack: this.props.monsterAttacksentToMonster,
             getUserHealth: this.props.getUserHealth,
-            fightWeaponAttack:this.props.fightWeaponAttack
+            fightWeaponAttack:0
         }
     }
 
@@ -44,19 +44,35 @@ render()
         // console.log(this.props.individualMonsterHealth);
         // console.log(this.props);
         // console.log("user health in monster comp" + this.state.userHealth);
+
+        if(this.state.monsterHealth > 0)
+        {
         return (
             <div>
-            <h1>Monster</h1>
+                <h1>Monster</h1>
                 <h3>Monster Health :{this.state.monsterHealth}</h3>
                 <h3>Attack :{this.state.monsterAttack}</h3>
-
                 <button className="btn-danger" onClick={(e)=>this.healthTracker(e)}>Attack!</button>
-
-
-
-
             </div>
+
+
         );
+     }
+        else
+        {
+
+            return (
+                <div>
+                    <h1 className="text-danger" > This Monster Is Dead :-/ </h1>
+
+                </div>)
+
+
+
+        }
+
+
+
     }
 }
 

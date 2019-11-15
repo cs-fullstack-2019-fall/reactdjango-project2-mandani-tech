@@ -14,7 +14,8 @@ class Fight extends Component
             userAvatar:'',
             userAttack:-1,
             itemEquipped:false,
-            fightWeaponAttack: this.props.fightWeaponAttack
+            fightWeaponAttack: this.props.fightWeaponAttack,
+            fightWeaponAvatar: this.props.fightWeaponAvatar
 
 
 
@@ -64,7 +65,8 @@ class Fight extends Component
                         this.setState({
                             userHealth: each.userHealth,
                             userAttack: each.userAttack,
-                            userAvatar: each.userAvatar
+                            userAvatar: each.userAvatar,
+                            username:each.username
                         });
 
                         return (
@@ -156,12 +158,17 @@ class Fight extends Component
 
                 {/*<hr/>*/}
 
-                <h1>{this.state.username}</h1>
+                <h1 className=" text-capitalize text-danger ">{this.state.username}</h1>
                 <h3>Attack : {this.state.userAttack}</h3>
                 <h3>Health Power :{this.state.userHealth}</h3>
                 <h3>My Avatar<br/><img src={this.state.userAvatar} height="200" alt="img"/></h3>
                 <h3>Weapon Equipped :{this.props.itemEquipped? "Yes": "No"}</h3>
                 <h3>Weapon Attack : {this.props.fightWeaponAttack}</h3>
+
+
+
+                <hr/>
+
 
 
 
