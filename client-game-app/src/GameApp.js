@@ -1,17 +1,22 @@
 import React, {Component} from 'react';
+import sesame from './sesame.jpg';
 import FighterProfile from "./FighterProfile";
 import Fight from "./Fight";
 import EditUserProfile from "./EditUserProfile";
 import Shop from "./Shop";
 import Home from "./Home";
 import NewUser from "./NewUser"
+
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+
 } from "react-router-dom";
-import Monsters from "./Monsters";
+
+
+// _________________________________________________________________________________________________________
 
 class GameApp extends Component
 {
@@ -25,13 +30,13 @@ class GameApp extends Component
                 username: null,
                 userID: 0,
                 itemEquipped: false,
+                // doneEditFlag:true
 
 
             }
         }
     }
-
-
+//________________________When the User hits submit on login this function is fired______________________
 
     onSubmitLoginForm=(e)=>{
         e.preventDefault();
@@ -39,6 +44,8 @@ class GameApp extends Component
         let passwordFromInput= e.target.password.value;
 
         console.log(usernameFromInput);
+
+//________________________Verifying the user name password from backend____________________________________
 
         fetch("/auth_users/",
 
@@ -70,7 +77,7 @@ class GameApp extends Component
                 }
             });
     };
-    // LOGIN FETCH ENDS HERE
+    //__________________________________ LOGIN FUNCTION_____________________________________________
 
     loginForm=(usernameFromInput, response)=>{
 
@@ -83,10 +90,7 @@ class GameApp extends Component
                             }
                         });
                 };
-
-
-
-    // LOGIN FETCH ENDS HERE
+    // _______________________________________LOG OUT FUNCTION_________________________________________
 
     logout=()=>{
         this.setState({
@@ -98,16 +102,21 @@ class GameApp extends Component
         })
 
     };
+//___________________________________WHEN USER EDITS THE USER INFORMATION THIS FUNCTION ID CALLED___________
 
     editCallBackFunc=(response)=>{
+
         this.setState({
             user:{
+                isLoggedIn:true,
                 username: response.username,
                 password: response.password,
-                userAvatar: response.userAvatar
-            }
-        })
+                userAvatar: response.userAvatar,
 
+            }
+        });
+        // this.setState({doneEditFlag:false});
+    // this.props.history.push("/displayUserProfile")
 };
 
 // this function is getting called in shop on button clicked for weapon equipped. saved state is sent to fighet profile to render profile conditionally
@@ -119,9 +128,6 @@ class GameApp extends Component
             fightWeaponAttack: each.weaponAttack,
             fightWeaponAvatar: each.weaponAvatar,
             itemEquipped:true
-
-
-
         });
 
     };
@@ -130,70 +136,60 @@ class GameApp extends Component
 
     render()
     {
-//___________________________________________________ The Logged In user will see this
+//___________________________________________________ The Logged In user will see this in  the render______________________________________
         if (this.state.user.isLoggedIn)
         {
             return (
 
                 <div>
-                    <h1 className =" jumbotron  " style={{borderRadius:20}} >Welcome to the Sesame Street {this.state.user.username}</h1>
+                    <h1 style={{color:"magenta",fontSize:40}}>Welcome to Sesame Street {this.state.user.username}</h1>
 
                     <Router>
 
-                        <nav className = "navbar">
-
-
-                            <Link className="navbar-link"  to="/displayUserProfile"> Fighter Profile </Link>
-                            <Link className="navbar-link" to="/displayAllMonsters"> Fight !</Link>
-                            <Link className="navbar-link" to="/editUserProfile"> Edit User Profile</Link>
+                        <nav className = " navbar navbar navbar-light jumbotron" style={{backgroundColor: "#e3f2fd"}}>
+                            <Link className="navbar-link"  to="/displayUserProfile"> My Profile </Link>
+                            <Link className="navbar-link" to="/displayAllMonsters"> Cookie Fight !</Link>
+                            <Link className="navbar-link" to="/editUserProfile">  Edit Monster  </Link>
                             <Link className="navbar-link" to="/displayWeapons">Shop</Link>
                             <Link className="navbar-link" to="/" onClick={this.logout}>  Log Out</Link>
-
                         </nav>
 
                         <Switch>
                             <Route path="/displayUserProfile">
                                 <FighterProfile  user={this.state.user} fightWeaponAvatar={this.state.fightWeaponAvatar} fightWeaponAttack={this.state.fightWeaponAttack} itemEquipped={this.state.itemEquipped} />
-
                             </Route>
 
                             <Route path="/displayAllMonsters"  >
                                 <Fight  user={this.state.user} fightWeaponAttack={this.state.fightWeaponAttack} itemEquipped={this.state.itemEquipped}/>
-
                             </Route>
 
                             <Route path="/editUserProfile" >
-                                <EditUserProfile user={this.state.user} editCallBackFunc={this.editCallBackFunc}/>
-
+                                <EditUserProfile user={this.state.user} doneEditFlag={this.state.doneEditFlag} editCallBackFunc={this.editCallBackFunc}/>
                             </Route>
 
                             <Route path="/displayWeapons"  >
-                                <Shop equipWeapon={this.equipWeapon}/>
-
+                                <Shop itemEquipped={this.itemEquipped}  equipWeapon={this.equipWeapon}/>
                             </Route>
-
-
-
                             <Route path="/">
                                 <Home/>
                             </Route>
-
                         </Switch>
-
-
                     </Router>
-
                 </div>
             )
 
         }
+        //____________________________Logged out user will see this in in render________________________________________________________
         else{
 
             return (
 
                 <div>
 
-                    <h1>Welcome to the Game</h1>
+
+
+                    {/*<img src={sesame} className="App-logo" alt="logo" height={1} width={1000}/>*/}
+                    <h1  style={{borderRadius:20, color:"magenta", fontSize:40}}>Welcome to the Cookie Fight Club </h1>
 
                     {this.state.messageToUsers}
 
@@ -209,34 +205,25 @@ class GameApp extends Component
 
 
                             <Route path="/" >
-                                <h3>Please sign in!</h3>
-                                <Link className="router-link" to="NewUser"> Create a New User Login OR</Link>
+
+                                <Link className="router-link" to="NewUser"><h3>Create a New Monster OR</h3></Link>
+                                <h2>Please sign in!</h2>
 
                                 <form onSubmit={(e)=>this.onSubmitLoginForm(e)}>
-                                    <label htmlFor="username">Login Username</label>
+                                    <label htmlFor="username">Monster Name</label>
                                     <input type="text" id="username"/><br/>
 
-                                    <label htmlFor="password">Login Password</label>
+                                    <label htmlFor="password">Magic Word</label>
                                     <input type="text" id="password"/><br/>
+                                <button className= "btn-success">Submit</button>
 
-
-
-
-                                    <button className= "btn-success">Submit</button>
 
                                 </form>
 
                             </Route>
-
-
-
                         </Switch>
 
                     </Router>
-
-
-
-
                 </div>
             );
         }

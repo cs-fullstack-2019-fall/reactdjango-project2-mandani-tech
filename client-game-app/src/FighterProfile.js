@@ -80,7 +80,7 @@ class FighterProfile extends Component
                     <h1 className="text-capitalize text-danger ">{this.state.username}</h1>
                     <h3>Attack : {this.state.userAttack}</h3>
                     <h3>Health Power :{this.state.userHealth}</h3>
-                    <h3>My Avatar<br/><img src={this.state.userAvatar} height="200" alt="img"/></h3>
+                    <h3>My Avatar<br/><img src={this.state.userAvatar} height="350" alt="img"/></h3>
                     <h3>Weapon Equipped :{this.props.itemEquipped? "Yes": "No"}</h3>
                     <h3>Weapon Attack : {this.props.fightWeaponAttack}</h3>
                     <br/><img src={this.state.fightWeaponAvatar} height="200" alt="img"/>

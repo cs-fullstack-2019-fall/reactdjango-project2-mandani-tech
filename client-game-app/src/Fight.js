@@ -115,7 +115,7 @@ class Fight extends Component
                                 <h1>{each.monsterName}</h1>
                                 {/*<h3>Attack :{each.monsterAttack}</h3>*/}
                                 {/*<h3>{each.monsterName}'s Health :{each.monsterHealth}</h3>*/}
-                                <h3>Avatar :<br/><img src={each.monsterAvatar} height="200" alt="img"/></h3>
+                                <h3>Avatar :<br/><img src={each.monsterAvatar} height="300" alt="img"/></h3>
                                 {/*<button onClick={(e)=>this.userHealthTracker(each.monsterAttack,e)}>Attack!</button>*/}
                                 <Monsters fightWeaponAttack={this.props.fightWeaponAttack}  getUserHealth={this.getUserHealth} individualMonsterHealth={this.state.monsterHealth} userAttacksentToMonster={this.state.userAttack} userHealthsentToMonster={this.state.userHealth} monsterAttacksentToMonster={this.state.monsterAttack}/>
 

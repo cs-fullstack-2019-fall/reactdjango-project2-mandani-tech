@@ -8,6 +8,7 @@ class Shop extends Component
         super(props);
         this.state = {
             weaponsList: <h3>Loading</h3>,
+            itemEquipped:this.props.itemEquipped
         }
     }
 
@@ -33,6 +34,7 @@ class Shop extends Component
                                 <h3>Attack  : {each.weaponAttack}</h3>
                                 <h3>Avatar  : <br/><img src={each.weaponAvatar} height="200" alt="img"/></h3>
                                 <button className="btn-danger" onClick={(e)=>this.props.equipWeapon(each,e)}>Equip Weapon</button>
+                                {/*<h3>Weapon Equipped :{this.state.itemEquipped? "Yes": "No"}</h3>*/}
                                 <hr/>
 
 
@@ -47,10 +49,29 @@ class Shop extends Component
     };
 
 
-    render() {
-        return(<div>
-            {this.state.weaponsList}
-        </div>)
+    render()
+    {
+        if (this.state.itemEquipped)
+
+
+
+        {
+            return(<div>
+
+                <h2>Weapon Equipped</h2>
+                {this.state.weaponsList}
+
+            </div>)
+        }
+
+        else {
+
+
+            return(<div>
+                {this.state.weaponsList}
+
+            </div>)
+        }
     }
 }
 

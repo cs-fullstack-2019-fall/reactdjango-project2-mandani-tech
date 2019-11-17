@@ -54,10 +54,10 @@ render()
         {
         return (
             <div>
-                <h1>Monster</h1>
+
                 <h3>Monster Health :{this.state.monsterHealth}</h3>
                 <h3>Attack :{this.state.monsterAttack}</h3>
-                <button className="btn-danger" onClick={(e)=>this.healthTracker(e)}>Attack!</button>
+                <button className="btn-danger" onClick={(e)=>this.healthTracker(e)}>Cookie Attack!</button>
             </div>
 
 
@@ -68,7 +68,7 @@ render()
 
             return (
                 <div>
-                    <h1 className="text-danger" > This Monster Is Dead :-/ </h1>
+                    <h1 className="text-danger" >  Is Dead :-/ </h1>
 
                 </div>)
 

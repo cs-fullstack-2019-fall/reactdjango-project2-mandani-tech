@@ -1,32 +1,44 @@
 .App {
   text-align: center;
 }
+
+
+
+
 body{
+  height: 100%;
   background-image: url("Sky_Monsters.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
-
 }
+
 
 .App-logo {
   height: 40vmin;
 }
 
 .App-header {
-  background-color: white;
-  padding:5%;
+  background-image: url("bubble-background.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  /*background: white;*/
+
+
+  padding:2%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   /*align-items: center;*/
   justify-content: center;
-  font-size: calc(12px + 2vmin);
+  font-size: calc(10px + 2vmin);
   color: blue;
   margin: 25%;
   border:orangered solid 10px;
   border-radius: 70px;
 }
+
+
 
 .App-link {
   color: #09d3ac;

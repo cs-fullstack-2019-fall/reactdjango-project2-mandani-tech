@@ -58,7 +58,7 @@ class NewUser extends Component
                         });
                 } else
                 {
-                    this.setState({messageToCreateUsers: "Username is already taken!"});
+                    this.setState({messageToCreateUsers: "Monster Name already taken!"});
                 }
             });
     };
@@ -74,10 +74,10 @@ class NewUser extends Component
                 {this.state.messageToCreateUsers}
 
                 <form onSubmit={this.createNewUser}>
-                    <label htmlFor="new_username">Enter New Username</label>
+                    <label htmlFor="new_username">Enter New Monster Name</label>
                     <input type="text" id="new_username"/><br/>
 
-                    <label htmlFor="new_password">Enter New Password</label>
+                    <label htmlFor="new_password">Enter New Magic Word</label>
                     <input type="text" id="new_password"/><br/>
 
                     <label htmlFor="userAvatar">My Avatar</label>
