@@ -30,7 +30,8 @@ class GameApp extends Component
                 username: null,
                 userID: 0,
                 itemEquipped: false,
-                // doneEditFlag:true
+                doneEditFlag:true
+
 
 
             }
@@ -112,6 +113,7 @@ class GameApp extends Component
                 username: response.username,
                 password: response.password,
                 userAvatar: response.userAvatar,
+                doneEdit:false
 
             }
         });
@@ -127,6 +129,7 @@ class GameApp extends Component
 
             fightWeaponAttack: each.weaponAttack,
             fightWeaponAvatar: each.weaponAvatar,
+            fightWeaponName: each.weaponName,
             itemEquipped:true
         });
 
@@ -156,11 +159,11 @@ class GameApp extends Component
 
                         <Switch>
                             <Route path="/displayUserProfile">
-                                <FighterProfile  user={this.state.user} fightWeaponAvatar={this.state.fightWeaponAvatar} fightWeaponAttack={this.state.fightWeaponAttack} itemEquipped={this.state.itemEquipped} />
+                                <FighterProfile fightWeaponName={this.state.fightWeaponName} user={this.state.user} fightWeaponAvatar={this.state.fightWeaponAvatar} fightWeaponAttack={this.state.fightWeaponAttack} itemEquipped={this.state.itemEquipped} />
                             </Route>
 
                             <Route path="/displayAllMonsters"  >
-                                <Fight  user={this.state.user} fightWeaponAttack={this.state.fightWeaponAttack} itemEquipped={this.state.itemEquipped}/>
+                                <Fight fightWeaponName={this.state.fightWeaponName} user={this.state.user} fightWeaponAttack={this.state.fightWeaponAttack}    fightWeaponAvatar={this.state.fightWeaponAvatar}   itemEquipped={this.state.itemEquipped}/>
                             </Route>
 
                             <Route path="/editUserProfile" >
@@ -188,10 +191,10 @@ class GameApp extends Component
 
 
 
-                    {/*<img src={sesame} className="App-logo" alt="logo" height={1} width={1000}/>*/}
-                    <h1  style={{borderRadius:20, color:"magenta", fontSize:40}}>Welcome to the Cookie Fight Club </h1>
+                    <img src={sesame} className="App-logo" alt="logo" height={1} width={500}/>
+                    <h1  style={{borderRadius:20, color:"magenta", fontSize:40}}>Welcome To The Cookie Fight Club </h1>
 
-                    {this.state.messageToUsers}
+                    {/*{this.state.messageToUsers}*/}
 
 
                     <Router>
@@ -214,7 +217,7 @@ class GameApp extends Component
                                     <input type="text" id="username"/><br/>
 
                                     <label htmlFor="password">Magic Word</label>
-                                    <input type="text" id="password"/><br/>
+                                    <input  type="text" id="password"/><br/>
                                 <button className= "btn-success">Submit</button>
 
 

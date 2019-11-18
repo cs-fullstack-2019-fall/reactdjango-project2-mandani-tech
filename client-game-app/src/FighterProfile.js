@@ -10,7 +10,11 @@ class FighterProfile extends Component
         this.state = {
             userProfile: <h3>Loading</h3>,
             itemEquipped: false,
-            fightWeaponAvatar:this.props.fightWeaponAvatar
+            fightWeaponAvatar:this.props.fightWeaponAvatar,
+            userAttack:this.props.userAttack,
+            userHealth:this.props.userHealth,
+            userAvatar:this.props.userAvatar,
+            username:this.username
 
         }
     }
@@ -63,7 +67,7 @@ class FighterProfile extends Component
 
 
             });
-    };
+    }
 
 
 
@@ -77,8 +81,8 @@ class FighterProfile extends Component
 
                 <div>
                 {/*{this.state.userProfile}*/}
-                    <h1 className="text-capitalize text-danger ">{this.state.username}</h1>
-                    <h3>Attack : {this.state.userAttack}</h3>
+                    <h1 className="text-capitalize text-danger ">{this.props.username}</h1>
+                    <h3>Attack : {this.props.userAttack}</h3>
                     <h3>Health Power :{this.state.userHealth}</h3>
                     <h3>My Avatar<br/><img src={this.state.userAvatar} height="350" alt="img"/></h3>
                     <h3>Weapon Equipped :{this.props.itemEquipped? "Yes": "No"}</h3>

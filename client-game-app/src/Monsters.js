@@ -68,7 +68,7 @@ render()
 
             return (
                 <div>
-                    <h1 className="text-danger" >  Is Dead :-/ </h1>
+                    <h1 className="text-danger" >  Alas!!! {this.props.monsterName}  is Dead :-/ </h1>
 
                 </div>)
 

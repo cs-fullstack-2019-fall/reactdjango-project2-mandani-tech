@@ -43,15 +43,15 @@ class EditUserProfile extends Component
 
 //_____________________________________________Form for user to update their username and password_______________________________________
     render(){
-    // if (this.props.doneEditFlag)
-    // {
-    //
-    //     return (<Redirect to='/FighterProfile/'/>);
-    //
-    //
-    // }
+    if (this.props.doneEditFlag)
+    {
 
-    // else {
+        return (<Redirect to='/FighterProfile/'/>);
+
+
+    }
+
+    else {
             return (
                 <div>
                     <form onSubmit={this.edit_item}>
@@ -76,7 +76,7 @@ class EditUserProfile extends Component
                 </div>
             );
         }
-    // }
+    }
 
 
 }

@@ -36,6 +36,8 @@ class NewUser extends Component
                 username: usernameFromInput,
                 password: passwordFromInput,
                 userAvatar: avatarFromInput,
+                isLoggedIn: true,
+
 
 
             })
@@ -55,6 +57,8 @@ class NewUser extends Component
                                 username: resp.username,
                                 userID: resp.id
                             }
+
+
                         });
                 } else
                 {
@@ -87,7 +91,7 @@ class NewUser extends Component
 
 
                 </form>
-                {/*<a href="FighterProfile/">Back</a>*/}
+                {/*<Link to="FighterProfile/">Back</Link>*/}
 
 
             </div>

@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Monsters from "./Monsters";
+import Link from "react-router-dom";
 
 class Fight extends Component
 {
@@ -10,12 +11,10 @@ class Fight extends Component
         this.state = {
             arraymonsterList: <h3>Loading</h3>,
             arrayofuserProfile: [],
-            userHealth: -1,
-            userAvatar:'',
-            userAttack:-1,
             itemEquipped:false,
             fightWeaponAttack: this.props.fightWeaponAttack,
-            fightWeaponAvatar: this.props.fightWeaponAvatar
+            fightWeaponAvatar: this.props.fightWeaponAvatar,
+            fightWeaponName:this.props.fightWeaponName
 
 
 
@@ -102,7 +101,8 @@ class Fight extends Component
                         // console.log(each)
                         this.setState({
                             monsterHealth: each.monsterHealth,
-                            monsterAttack:each.monsterAttack
+                            monsterAttack:each.monsterAttack,
+                            monsterName:each.monsterName
 
                         }
                             );
@@ -117,7 +117,7 @@ class Fight extends Component
                                 {/*<h3>{each.monsterName}'s Health :{each.monsterHealth}</h3>*/}
                                 <h3>Avatar :<br/><img src={each.monsterAvatar} height="300" alt="img"/></h3>
                                 {/*<button onClick={(e)=>this.userHealthTracker(each.monsterAttack,e)}>Attack!</button>*/}
-                                <Monsters fightWeaponAttack={this.props.fightWeaponAttack}  getUserHealth={this.getUserHealth} individualMonsterHealth={this.state.monsterHealth} userAttacksentToMonster={this.state.userAttack} userHealthsentToMonster={this.state.userHealth} monsterAttacksentToMonster={this.state.monsterAttack}/>
+                                <Monsters monsterName={this.state.monsterName} fightWeaponAttack={this.props.fightWeaponAttack}  getUserHealth={this.getUserHealth} individualMonsterHealth={this.state.monsterHealth} userAttacksentToMonster={this.state.userAttack} userHealthsentToMonster={this.state.userHealth} monsterAttacksentToMonster={this.state.monsterAttack}/>
 
 
                                 <hr/>
@@ -163,7 +163,10 @@ class Fight extends Component
                 <h3>Health Power :{this.state.userHealth}</h3>
                 <h3>My Avatar<br/><img src={this.state.userAvatar} height="300" alt="img"/></h3>
                 <h3>Weapon Equipped :{this.props.itemEquipped? "Yes": "No"}</h3>
+                <h3>Weapon Name : {this.state.fightWeaponName}</h3>
                 <h3>Weapon Attack : {this.props.fightWeaponAttack}</h3>
+                <br/><img src={this.state.fightWeaponAvatar} height="200" alt="img"/>
+
 
 
 
