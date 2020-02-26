@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6b81ae77-4967-405e-a70f-929399b6f927" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/EditPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/EditPage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FightPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/FightPage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home.png" beforeDir="false" afterPath="$PROJECT_DIR$/Home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogIn.png" beforeDir="false" afterPath="$PROJECT_DIR$/LogIn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewUser.png" beforeDir="false" afterPath="$PROJECT_DIR$/NewUser.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/.idea/$CACHE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/.idea/$CACHE_FILE$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/.idea/Server_Game_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/.idea/Server_Game_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0002_auto_20191110_2203.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0002_auto_20191110_2203.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0003_auto_20191110_2230.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0003_auto_20191110_2230.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0004_usermodel_useravatar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0004_usermodel_useravatar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0005_auto_20191111_1605.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0005_auto_20191111_1605.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0006_auto_20191111_1621.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0006_auto_20191111_1621.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0007_auto_20191111_1623.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0007_auto_20191111_1623.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0008_auto_20191111_1900.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0008_auto_20191111_1900.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0009_auto_20191111_1901.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0009_auto_20191111_1901.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0010_auto_20191111_1901.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0010_auto_20191111_1901.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0011_auto_20191111_2111.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0011_auto_20191111_2111.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0012_auto_20191112_0439.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0012_auto_20191112_0439.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0013_auto_20191112_0447.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/0013_auto_20191112_0447.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server_Game_Project/gameApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server_Game_Project/gameApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop.png" beforeDir="false" afterPath="$PROJECT_DIR$/Shop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/.idea/$CACHE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/.idea/$CACHE_FILE$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/.idea/client-game-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/.idea/client-game-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/EditUserProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/EditUserProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/Enemies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/Enemies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/Fight.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/Fight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/FighterProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/FighterProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/GameApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/GameApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/Group_pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/Group_pic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/Monsters.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/Monsters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/NewUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/NewUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/Shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/Sky_Monsters.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/Sky_Monsters.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/bubble-background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/bubble-background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/giphy.gif" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/giphy.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/good_quality_group.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/good_quality_group.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/src/sesame.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/src/sesame.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-game-app/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-game-app/yarn.lock" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server_Game_Project/gameApp/views.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="45">
+                <caret line="6" selection-start-line="6" selection-end-line="6" />
+                <folding>
+                  <element signature="e#0#56#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor relative-caret-position="-45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/settings.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="285">
+                <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+              </first_editor>
+              <second_editor relative-caret-position="-105" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/urls.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/reactdjango-project2-mandani-tech.iml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="133" />
+    <option name="y" value="47" />
+    <option name="width" value="1380" />
+    <option name="height" value="833" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="reactdjango-project2-mandani-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactdjango-project2-mandani-tech" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactdjango-project2-mandani-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactdjango-project2-mandani-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="Server_Game_Project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactdjango-project2-mandani-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactdjango-project2-mandani-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="Server_Game_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="gameApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reactdjango-project2-mandani-tech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reactdjango-project2-mandani-tech" type="462c0819:PsiDirectoryNode" />
+              <item name="Server_Game_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="Server_Game_Project" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.37033194" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b81ae77-4967-405e-a70f-929399b6f927" name="Default Changelist" comment="" />
+      <created>1582660994131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582660994131</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1600" height="824" extended-state="7" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17976804" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Pylint" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.36796537" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Mongo Explorer" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/django/utils/autoreload.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="-509">
+            <caret line="247" selection-start-line="247" selection-end-line="247" />
+          </first_editor>
+          <second_editor relative-caret-position="-105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/django/core/management/commands/runserver.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="130">
+            <caret line="111" selection-start-line="111" selection-end-line="111" />
+          </first_editor>
+          <second_editor relative-caret-position="-105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server_Game_Project/gameApp/views.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="45">
+            <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <folding>
+              <element signature="e#0#56#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/urls.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server_Game_Project/Server_Game_Project/settings.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="285">
+            <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          </first_editor>
+          <second_editor relative-caret-position="-105" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.6 (venv) (1) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37033194" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>reactdjango-project2-mandani-tech</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
